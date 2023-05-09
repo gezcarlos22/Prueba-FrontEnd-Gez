@@ -1,0 +1,98 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to top, rgba(30,35,38,.5),rgba(30,35,38,.7)),url(/assets/fondo2.jpg) no-repeat center/ cover;
+}
+.main{
+	width: 850px;
+	height: 550px;
+	background: red;
+	overflow: hidden;
+	background:url(/assets/fondogris.jpg) no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+
+}
+#chk{
+	display: none;
+}
+
+form{
+    margin: 6em 1em 1em 1em;
+}
+
+label{
+	color: #000;
+	font-size: 2em;
+    justify-content: center;
+    align-items: center;
+	display: flex;
+	margin: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+    align-items: center;
+    font-size: 1.5em;
+}
+input{
+	width: 80%;
+	height: 50px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 15px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+
+	box-shadow: 3px 3px 3px #969696, -1px -1px 1px #fff;
+}
+
+input:focus {
+	background: #ffffff;
+	box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+input:active {
+	transition: .5s;
+	transform: translateX(0em) translateY(0em);
+	box-shadow: none;
+}
+
+
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #ff0400;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	transition: .2s ease-in;
+	cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.75);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.75);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.75);
+}
+button:focus {
+	background: #ffffff;
+	box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+button:active {
+	transition: .5s;
+	transform: translateX(0em) translateY(0em);
+	box-shadow: none;
+}
+
+

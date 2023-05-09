@@ -8,7 +8,6 @@ package com.portafolio.Gez.Security.Dto;
 import java.util.HashSet;
 import java.util.Set;
 
-
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;
@@ -16,7 +15,7 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
     
-    //Gettes y Setter
+    //Gettes & Setters
 
     public String getNombre() {
         return nombre;
@@ -59,3 +58,4 @@ public class NuevoUsuario {
     }
     
 }
+

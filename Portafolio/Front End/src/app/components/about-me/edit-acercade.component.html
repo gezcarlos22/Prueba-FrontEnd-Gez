@@ -1,6 +1,6 @@
-<div class="container" *ngIf="persona">
+<body  *ngIf="persona">
     <div class="row">
-        <div>
+        <div class="main">
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
@@ -26,4 +26,4 @@
             </form>
         </div>
     </div>
-</div>
+</body>

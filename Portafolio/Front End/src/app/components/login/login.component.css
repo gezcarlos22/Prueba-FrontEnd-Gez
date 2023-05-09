@@ -70,6 +70,7 @@ button{
 }
 button:hover{
 	background: #c92a2a;
+	color:#000
 }
 .login{
 	height: 460px;

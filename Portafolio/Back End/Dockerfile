@@ -6,4 +6,4 @@ COPY target/Gez-0.0.1-SNAPSHOT.jar Gez-app.jar
 
 ENTRYPOINT ["java","-jar","/Gez-app.jar"]
 
-EXPOSE 8080
+EXPOSE 80801
