@@ -63,7 +63,30 @@ input:active {
 	transform: translateX(0em) translateY(0em);
 	box-shadow: none;
 }
+textarea{
+	width: 80%;
+	height: 50px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 15px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
 
+	box-shadow: 3px 3px 3px #969696, -1px -1px 1px #fff;
+}
+
+textarea:focus {
+	background: #ffffff;
+	box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+textarea:active {
+	transition: .5s;
+	transform: translateX(0em) translateY(0em);
+	box-shadow: none;
+}
 
 button{
 	width: 60%;

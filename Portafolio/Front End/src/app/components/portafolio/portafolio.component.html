@@ -1,34 +1,31 @@
   <!-- SECCION PORTAFOLIO -->
-  <section class="port">
+  <section class="port" >
     <div class="titulo">
       <h2>portafolio</h2>
+      <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">Agregar Proyecto</button>
     </div>
 
-    <div class="blog-card">
-      <div class="meta">
-        <div class="photo" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__480.jpg)"></div>
-      </div>
-      <div class="description">
-        <h1>Portafolio 1</h1>
-        <h2>Fecha</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-        <p class="read-more">
-          <a href="#">LINKS</a>
-        </p>
-      </div>
-    </div>
-    <div class="blog-card alt">
+    <div class="blog-card alt" *ngFor="let proyecto of proyectos">
       <div class="meta">
         <div class="photo" style="background-image: url(https://cdn.pixabay.com/photo/2015/07/02/09/52/interior-design-828545_960_720.jpg)"></div>
       </div>
       <div class="description">
-        <h1>Portafolio 2</h1>
-        <h2>Fecha</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-        <p class="read-more">
-          <a href="#">LINKS</a>
-        </p>
-      </div>
-    </div>
+        
+        <h1>{{proyecto.proyecto}}</h1>
+        <h2>{{proyecto.inicio | date:"dd-MM-yyyy"}} / {{proyecto.fin | date:"dd-MM-yyyy"}} </h2>
+        <p>{{proyecto.descripcion}}</p>
 
+        <p class="read-more">
+          <a href="{{proyecto.url}}">LINKS</a>
+        </p>
+        <div class="botones">
+          <li><button class="btn btn-dark" routerLink="/editproy/{{proyecto.id}}" *ngIf="isLogged">
+            <i class="bi bi-pencil-square"></i></button></li>
+          <li><button class="btn btn-danger" (click)="delete(proyecto.id)" *ngIf="isLogged">
+          <i class="bi bi-x-square"></i></button></li>
+        </div>
+      </div>
+      
+    </div>
+  
   </section>

@@ -1,0 +1,43 @@
+<body *ngIf="proyecto">
+    <div class="row">
+        <div class="main">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="proyecto">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="proyecto" name="proyecto" [(ngModel)]="proyecto.proyecto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion" class="form-label">Agregar Información de proyecto realizado</label>
+                    <textarea type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="proyecto.descripcion" required></textarea >
+                </div>
+
+                <div class="form-group">
+                    <label for="inicio">Inicio del proyecto</label>
+                    <input type="date" class="form-control" id="inicio" name="inicio" [(ngModel)]="proyecto.inicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fin">Fin del proyecto</label>
+                    <input type="date" class="form-control" id="fin" name="fin" [(ngModel)]="proyecto.fin" required>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="imagen" class="form-label">Imagen del proyecto</label>
+                    <input type="file" class="form-control" id="imagen" name="imagen" [(ngModel)]="proyecto.imagen" accept=".jpg, .jpeg, .png">
+                </div>
+                
+                <div class="form-group">
+                    <label for="url">URL del proyecto</label>
+                    <input type="url" class="form-control" id="url" name="url" [(ngModel)]="proyecto.url" required>
+                </div>
+
+                <br>
+                <button class="btn btn-primary">
+                    Agregar proyecto 
+                </button>
+            </form>
+        </div>
+    </div>
+</body>

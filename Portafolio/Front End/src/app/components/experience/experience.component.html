@@ -22,9 +22,9 @@
           <p>{{Experiencia.descripcionE}}</p>
           <!-- <span class="cd-date">Jan 18</span> -->
             <div class="botones">
-              <li><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+              <li><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
                 <i class="bi bi-pencil-square"></i></button></li>
-              <li><button class="btn btn-danger" (click)="delete(Experiencia.id)">
+              <li><button class="btn btn-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged">
               <i class="bi bi-x-square"></i></button></li>
             </div>
 

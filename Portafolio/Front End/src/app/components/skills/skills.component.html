@@ -32,11 +32,11 @@
 
       <div class="botones">
           <li *ngIf="isLogged">
-              <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+              <button class="btn btn-light" routerLink="/editskill/{{skill.id}}" *ngIf="isLogged">
                 <i class="bi bi-pencil-square"></i></button>
           </li>
           <li *ngIf="isLogged">
-              <button class="btn btn-danger" (click)="delete(skill.id)">
+              <button class="btn btn-danger" (click)="delete(skill.id)" *ngIf="isLogged">
                 <i class="bi bi-x-square"></i></button>
           </li>
       </div>

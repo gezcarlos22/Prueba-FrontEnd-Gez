@@ -10,7 +10,7 @@ body{
 }
 .main{
 	width: 850px;
-	height: 550px;
+	height: 1000px;
 	background: red;
 	overflow: hidden;
 	background:url(/assets/fondogris.jpg) no-repeat center/ cover;
@@ -88,6 +88,7 @@ textarea:active {
 	box-shadow: none;
 }
 
+
 button{
 	width: 60%;
 	height: 40px;
@@ -117,5 +118,3 @@ button:active {
 	transform: translateX(0em) translateY(0em);
 	box-shadow: none;
 }
-
-
