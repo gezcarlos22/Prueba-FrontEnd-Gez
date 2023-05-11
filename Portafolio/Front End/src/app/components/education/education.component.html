@@ -19,7 +19,8 @@
   
         <div class="cd-timeline-content">
           <h2>{{Educacion.nombreE}}</h2> 
-          <!-- <img src="assets/unc.png" id="unc"> -->
+          <span class="cd-date">{{Educacion.inicio | date:"dd/MM/yyyy"}} - {{Educacion.fin | date:"dd/MM/yyyy"}}</span>
+          <img src="{{Educacion.imagen}}" id="unc"> 
           <p>{{Educacion.descripcionE}}</p>
           <!-- <span class="cd-date">Jan 18</span> -->
             <div class="botones">
