@@ -139,8 +139,10 @@
       transition-property: width, left;
     }
     
+
     .info h3{
-      font-size: 18px;
+      position: relative;
+      font-size: 25px;
       font-weight: normal;
       line-height: 1.6;
     }

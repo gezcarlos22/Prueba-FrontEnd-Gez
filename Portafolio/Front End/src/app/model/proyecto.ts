@@ -7,7 +7,7 @@ export class Proyecto {
     imagen:string;
     url:string;
 
-    constructor(proyecto:string, inicio: string, fin: string, descripcion:string, imagen:string, url:string, personaid:number) {
+    constructor(proyecto:string, inicio: string, fin: string, descripcion:string, imagen:string, url:string,) {
         this.proyecto = proyecto;
         this.inicio = inicio;
         this.fin = fin;

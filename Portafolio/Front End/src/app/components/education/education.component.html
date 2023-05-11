@@ -15,14 +15,14 @@
   
       <div class="cd-timeline-block" *ngFor="let Educacion of educacion">
         <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
+        </div> 
   
         <div class="cd-timeline-content">
           <h2>{{Educacion.nombreE}}</h2> 
           <span class="cd-date">{{Educacion.inicio | date:"dd/MM/yyyy"}} - {{Educacion.fin | date:"dd/MM/yyyy"}}</span>
           <img src="{{Educacion.imagen}}" id="unc"> 
           <p>{{Educacion.descripcionE}}</p>
-          <!-- <span class="cd-date">Jan 18</span> -->
+          
             <div class="botones">
               <li><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged">
                 <i class="bi bi-pencil-square"></i></button></li>
@@ -30,8 +30,8 @@
               <i class="bi bi-x-square"></i></button></li>
             </div>
 
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
+        </div>
+      </div> 
     </section>
 </section>
 

@@ -2,11 +2,11 @@
 <section id="inicio" class="inicio">
       <div class="banner">
         <div class="perfil">
-          <img src="\assets\GEZCARLOS.png"  alt="">
+          <img src="{{persona.img}}"  alt="">
           <!--{{persona.img}} -->
         </div>
         <h1 class="insetshadow">{{persona.nombre}} {{persona.apellido}}</h1>
-        <h2>Full Stack Developer Jr</h2>
+        <h2>{{persona.profesion}}</h2>
         <div>
           <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
           Editar Persona
@@ -20,6 +20,5 @@
           <div class="about">
             <h2>About Me</h2>
             <h3>{{persona.descripcion}}</h3>
-    
           </div>             
 </section>

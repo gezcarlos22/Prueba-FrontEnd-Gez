@@ -10,7 +10,7 @@ body{
 }
 .main{
 	width: 850px;
-	height: 550px;
+	height:630px;
 	background: red;
 	overflow: hidden;
 	background:url(/assets/fondogris.jpg) no-repeat center/ cover;

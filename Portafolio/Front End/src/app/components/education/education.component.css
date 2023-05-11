@@ -149,11 +149,11 @@
   color: rgba(255,255,255,.9);
   margin-top:0;
   margin-bottom: 5px;
+  font-size: 25px;
   }
   .cd-timeline-content p, .cd-timeline-content .cd-date {
   color: rgba(255,255,255,.7);
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 25px;
   }
   .cd-timeline-content .cd-date {
   display: inline-block;
@@ -176,11 +176,10 @@
   
   @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 22px;
   }
   .cd-timeline-content p {
-    font-size: 18px;
+    font-size: 22px;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 16px;
