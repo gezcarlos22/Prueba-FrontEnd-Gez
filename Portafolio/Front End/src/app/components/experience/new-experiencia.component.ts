@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';
+import { ImageService } from 'src/app/service/image.service';
 import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 
 @Component({
@@ -34,3 +35,5 @@ export class NewExperienciaComponent implements OnInit {
   }
 
 }
+
+

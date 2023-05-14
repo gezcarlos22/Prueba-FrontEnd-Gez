@@ -20,7 +20,8 @@
         <div class="cd-timeline-content">
           <h2>{{Educacion.nombreE}}</h2> 
           <span class="cd-date">{{Educacion.inicio | date:"dd/MM/yyyy"}} - {{Educacion.fin | date:"dd/MM/yyyy"}}</span>
-          <img src="{{Educacion.imagen}}" id="unc"> 
+          <div></div>
+          <img [src]="Educacion.imagen" id="imagen" width="200px" > 
           <p>{{Educacion.descripcionE}}</p>
           
             <div class="botones">

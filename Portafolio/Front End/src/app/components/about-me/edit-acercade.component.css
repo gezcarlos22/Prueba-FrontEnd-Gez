@@ -10,7 +10,7 @@ body{
 }
 .main{
 	width: 850px;
-	height: 850px;
+	height: 1000px;
 	background: red;
 	overflow: hidden;
 	background:url(/assets/fondogris.jpg) no-repeat center/ cover;
@@ -28,7 +28,6 @@ form{
 
 label{
 	color: #000;
-
     justify-content: center;
     align-items: center;
 	display: flex;
@@ -119,4 +118,10 @@ button:active {
 	transition: .5s;
 	transform: translateX(0em) translateY(0em);
 	box-shadow: none;
+}
+
+.imagen{
+	justify-content: center;
+    align-items: center;
+	display: flex;
 }

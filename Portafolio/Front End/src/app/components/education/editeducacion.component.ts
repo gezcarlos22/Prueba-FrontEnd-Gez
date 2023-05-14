@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
+import { ImageService } from 'src/app/service/image.service';
 
 @Component({
   selector: 'app-editeducacion',
@@ -15,7 +16,8 @@ export class EditeducacionComponent implements OnInit {
   constructor(
     private educacionS: EducacionService,
     private activatedRouter : ActivatedRoute,
-    private router: Router
+    private router: Router,
+    public imageService: ImageService
   ) { }
 
   ngOnInit(): void {
@@ -41,4 +43,5 @@ export class EditeducacionComponent implements OnInit {
       }
     )
   }
+
 }

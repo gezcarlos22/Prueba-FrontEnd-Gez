@@ -7,7 +7,7 @@
 
     <div class="blog-card alt" *ngFor="let proyecto of proyectos">
       <div class="meta">
-        <div class="photo" style="background-image: url(https://cdn.pixabay.com/photo/2015/07/02/09/52/interior-design-828545_960_720.jpg)"></div>
+        <div class="photo" style="background-image: url({{proyecto.imagen}})"></div>
       </div>
       <div class="description">
         
@@ -16,7 +16,7 @@
         <p>{{proyecto.descripcion}}</p>
 
         <p class="read-more">
-          <a href="{{proyecto.url}}">LINKS</a>
+          <a [href]="proyecto.url">LINKS</a>
         </p>
         <div class="botones">
           <li><button class="btn btn-dark" routerLink="/editproy/{{proyecto.id}}" *ngIf="isLogged">

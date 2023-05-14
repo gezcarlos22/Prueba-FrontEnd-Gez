@@ -1,8 +1,8 @@
 <!--Perfil-->
-<section id="inicio" class="inicio">
+<section id="inicio" class="inicio" *ngIf="persona">
       <div class="banner">
         <div class="perfil">
-          <img src="{{persona.img}}"  alt="">
+          <img [src]="persona.img" alt="">
           <!--{{persona.img}} -->
         </div>
         <h1 class="insetshadow">{{persona.nombre}} {{persona.apellido}}</h1>
@@ -16,9 +16,9 @@
 </section>
       
 <!--Acerca de mi -->
-<section class="info">
+<section class="info" *ngIf="persona">
           <div class="about">
-            <h2>About Me</h2>
+            <h2>acerca de mi</h2>
             <h3>{{persona.descripcion}}</h3>
           </div>             
 </section>

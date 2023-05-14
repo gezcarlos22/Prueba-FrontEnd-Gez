@@ -1,14 +1,14 @@
 <!--Experiencia-->
 <section class="exp">
     <div class="titulo">
-      <h2>Experience</h2>
+      <h2>Experiencia laboral</h2>
 
       <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
         Nueva Experiencia
       </button>
     </div>  
     
-    <section id="cd-timeline" class="cd-container" >
+    <section id="cd-timeline" class="cd-container">
       <div class="cd-timeline-block">
       </div>
   
@@ -16,10 +16,11 @@
         <div class="cd-timeline-img cd-movie">
         </div> 
   
-        <div class="cd-timeline-content">
+        <div class="cd-timeline-content" >
           <h2>{{Experiencia.nombreE}}</h2> 
           <span class="cd-date">{{Experiencia.inicio | date:"dd/MM/yyyy"}} - {{Experiencia.fin | date:"dd/MM/yyyy"}}</span>
-          <img src="{{Experiencia.imagen}}" id="unc"> 
+          <div></div>
+          <img [src]="Experiencia.imagen" id="imagen" width="200px" > 
           <p>{{Experiencia.descripcionE}}</p>
           
             <div class="botones">

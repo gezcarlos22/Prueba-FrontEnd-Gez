@@ -11,11 +11,11 @@
         <li><a href="#"><img src="assets/github.png" id="gibhub"></a></li>
         
         <button class="cuenta" *ngIf="!isLogged">
-          <a href="/login" >LOGIN</a>
+          <a href="/login" >INGRESO</a>
         </button>
 
-        <button class="cuenta" *ngIf="isLogged">
-          <a href="/login">CERRAR SESION</a>
+        <button class="cuenta" *ngIf="isLogged"(click)="onLogOut()">
+          <a href="/">CERRAR SESION</a>
         </button>
 
       </ul>

@@ -25,6 +25,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { EditAcercadeComponent } from './components/about-me/edit-acercade.component';
 import { NewProyectoComponent } from './components/portafolio/new-proyecto.component';
 import { EditProyectoComponent } from './components/portafolio/edit-proyecto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -59,6 +62,8 @@ import { EditProyectoComponent } from './components/portafolio/edit-proyecto.com
     FormsModule, 
     ReactiveFormsModule,
     NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [
     interceptorProvider

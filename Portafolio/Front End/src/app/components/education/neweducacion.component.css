@@ -117,3 +117,9 @@ button:active {
 	transform: translateX(0em) translateY(0em);
 	box-shadow: none;
 }
+
+.imagen{
+	justify-content: center;
+    align-items: center;
+	display: flex;
+}

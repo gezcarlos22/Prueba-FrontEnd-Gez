@@ -31,7 +31,5 @@ export class NewSkillComponent implements OnInit {
     )
   }
 
-  uploadImage($event:any){
 
-  }
 }
