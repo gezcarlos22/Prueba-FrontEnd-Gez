@@ -3,7 +3,6 @@ export const environment = {
 
   //URL: 'http://localhost:8080/',
   URL: 'https://backendgez.onrender.com/',
-  
   firebase: {
     projectId: 'frontendgez',
     appId: '1:1052268005723:web:d6ac0f6a9dccbf4195327e',
