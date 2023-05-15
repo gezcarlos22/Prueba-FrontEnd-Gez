@@ -1,5 +1,5 @@
-<!--Perfil-->
-<section id="inicio" class="inicio" *ngIf="persona">
+
+<section id="inicio" class="inicio" >
       <div class="banner">
         <div class="perfil">
           <img [src]="persona.img" alt="">
@@ -14,9 +14,8 @@
         </div>
       </div>
 </section>
-      
-<!--Acerca de mi -->
-<section class="info" *ngIf="persona">
+
+<section class="info" >
           <div class="about">
             <h2>acerca de mi</h2>
             <h3>{{persona.descripcion}}</h3>

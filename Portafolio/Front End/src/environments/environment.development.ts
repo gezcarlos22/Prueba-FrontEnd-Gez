@@ -1,8 +1,8 @@
 export const environment = {
   production: false,
 
-  URL: 'http://localhost:8080/',
-  //URL: 'https://backendgez.onrender.com/';
+  //URL: 'http://localhost:8080/',
+  URL: 'https://backendgez.onrender.com/',
 
   firebase: {
     projectId: 'frontendgez',
