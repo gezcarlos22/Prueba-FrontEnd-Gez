@@ -2,11 +2,11 @@
 <section id="inicio" class="inicio" >
       <div class="banner">
         <div class="perfil">
-          <img [src]="persona.img" alt="">
+          <img [src]="persona?.img" alt="">
           <!--{{persona.img}} -->
         </div>
-        <h1 class="insetshadow">{{persona.nombre}} {{persona.apellido}}</h1>
-        <h2>{{persona.profesion}}</h2>
+        <h1 class="insetshadow">{{persona?.nombre}} {{persona?.apellido}}</h1>
+        <h2>{{persona?.profesion}}</h2>
         <div>
           <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
           Editar Persona
@@ -18,6 +18,6 @@
 <section class="info" >
           <div class="about">
             <h2>acerca de mi</h2>
-            <h3>{{persona.descripcion}}</h3>
+            <h3>{{persona?.descripcion}}</h3>
           </div>             
 </section>
